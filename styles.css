@@ -8,11 +8,6 @@
     --header-color: white;
     --card-color: white;
     --highlight-color: gold;
-
-    
-    --bg-test-color-1: lightpink;
-    --bg-test-color-2: lightgoldenrodyellow;
-
 }
 
 body {
@@ -22,7 +17,6 @@ body {
 
 h1 {
     color: white;
-    /* background-color: var(--bg-test-color-1); */
 }
 
 h2 {
@@ -102,8 +96,6 @@ p {
     grid-template-columns: 2rem auto;
     gap: var(--side-gap);
     align-items: center;
-    
-    /* border: 1px solid salmon; */
 }
 
 .menu-icon {
@@ -145,8 +137,6 @@ p {
 }
 
 .top-row {
-    border: 1px solid salmon;
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -157,14 +147,10 @@ p {
 }
 
 .search {
-    border: 1px solid blue;
-    
     width: var(--header-split);
 }
 
 .profile-panel {
-    border: 1px solid green;
-    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -174,8 +160,6 @@ p {
 }
 
 .bottom-row {
-    border: 1px solid salmon;
-    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -186,8 +170,6 @@ p {
 }
 
 .greeting-container {
-    border: 1px solid blue;
-
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -196,8 +178,6 @@ p {
 }
 
 .action-menu {
-    border: 1px solid green;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -221,6 +201,8 @@ p {
 /* MAIN CONTENT SECTION */
 
 .main-content {
+    --border-radius: 8px;
+
     display: grid;
     grid-template-columns: 1fr minmax(280px, 30%);
     grid-template-rows: 360px minmax(250px, 1fr);
@@ -230,11 +212,6 @@ p {
     grid-area: 2 / 2 / 3 / 3;
 
     padding: 2rem 2rem 2rem 1.5rem;
-    /* margin-right: 1rem; */
-
-    --border-radius: 8px;
-
-    /* border: 1px solid yellow; */
 }
 
 .content-projects {
@@ -243,14 +220,10 @@ p {
 
     grid-column: 1 / 2;
     grid-row: 1 / 3;
-
-    /* border: 1px solid salmon; */
 }
 
 .title-container {
     grid-row: 1 / 2;
-
-    /* border: 1px solid pink; */
 }
 
 .content-title {
@@ -259,16 +232,12 @@ p {
 }
 
 .cards-container {
-    /* border: 1px solid purple; */
-
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 
 .project-card {
-    /* border: 1px solid blue; */
-
     display: grid;
     grid-template-columns: 5px 1fr;
     border-radius: var(--border-radius);
@@ -285,8 +254,6 @@ p {
 }
 
 .card-content {
-    /* border: 1px solid red; */
-
     display: grid;
     grid-template-rows: 1em 1fr 1em;
 
@@ -294,8 +261,6 @@ p {
 }
 
 .content-announce {
-    border: 1px solid green;
-    
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     
@@ -329,12 +294,10 @@ p {
 
 .panel-title {
     margin: 0;
-    
-    border: 1px solid salmon;
 }
 
 .panel-text {
-    border: 1px solid blue;
+
 }
 
 .line {
@@ -345,14 +308,11 @@ p {
 }
 
 .content-trending {
-    border: 1px solid pink;
-    
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     
     display: grid;
     grid-template-rows: 2rem 1fr;
-    
 }
 
 .trending-panel {

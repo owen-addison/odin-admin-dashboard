@@ -51,9 +51,9 @@ p {
     opacity: 0.6;
 }
 
-img {
+/* img {
     border: 1px solid saddlebrown;
-}
+} */
 
 /* DASHBOARD LAYOUT */
 
@@ -288,8 +288,16 @@ img {
 
 .card-icons {
     display: grid;
-    grid-template-columns: repeat(3, 60px);
+    grid-template-columns: repeat(3, 50px);
+    justify-items: end;
     justify-self: end;
+
+    height: min-content;
+}
+
+.card-icon {
+    width: 1.4rem;
+    opacity: 0.6;
 }
 
 .content-announce {

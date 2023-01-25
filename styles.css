@@ -7,7 +7,7 @@
     --sidebar-color: lightskyblue;
     --header-color: white;
     --card-color: white;
-    --highlight-color: goldenrod;
+    --highlight-color: gold;
 
     
     --bg-test-color-1: lightpink;
@@ -44,6 +44,10 @@ h4 {
 h5 {
     font-size: 1rem;
     margin: 0;
+}
+
+h6 {
+    font-size: 0.9rem;
 }
 
 p {
@@ -219,7 +223,7 @@ p {
 .main-content {
     display: grid;
     grid-template-columns: 1fr 300px;
-    grid-template-rows: 320px minmax(250px, 1fr);
+    grid-template-rows: 360px minmax(250px, 1fr);
     gap: 15px;
 
     background-color: rgba(176, 196, 222, 0.499);
@@ -240,13 +244,13 @@ p {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
 
-    border: 1px solid salmon;
+    /* border: 1px solid salmon; */
 }
 
 .title-container {
     grid-row: 1 / 2;
-    /* height: 100%; */
-    border: 1px solid pink;
+
+    /* border: 1px solid pink; */
 }
 
 .content-title {
@@ -255,7 +259,7 @@ p {
 }
 
 .cards-container {
-    border: 1px solid purple;
+    /* border: 1px solid purple; */
 
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -263,13 +267,14 @@ p {
 }
 
 .project-card {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 
     display: grid;
     grid-template-columns: 5px 1fr;
     border-radius: var(--border-radius);
 
     background-color: var(--card-color);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
 }
 
 .card-strip {
@@ -280,7 +285,7 @@ p {
 }
 
 .card-content {
-    border: 1px solid red;
+    /* border: 1px solid red; */
 
     display: grid;
     grid-template-rows: 1em 1fr 1em;
@@ -296,28 +301,47 @@ p {
     
     display: grid;
     grid-template-rows: 2rem 1fr;
+
+    --announce-pad: 8%;
 }
 
 .announce-panel {
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: 1fr 1px 1fr 1px 1fr;
     
     grid-row: 2 / 3;
     
     background-color: var(--card-color);
     
     border-radius: var(--border-radius);
+
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
 }
 
 
 .panel-content {
-    border: 1px solid black;
-    padding: 1.2em 1em;
+    /* display: grid; */
+    /* gap: 2px; */
+
+    padding: calc(0.8 * var(--announce-pad)) var(--announce-pad);
 }
+
 
 .panel-title {
     margin: 0;
+    
+    border: 1px solid salmon;
+}
 
+.panel-text {
+    border: 1px solid blue;
+}
+
+.line {
+    height: 1px;
+    width: calc(100% - var(--announce-pad) * 2);
+    justify-self: center;
+    background-color: black;
 }
 
 .content-trending {
@@ -341,6 +365,8 @@ p {
     background-color: var(--card-color);
     
     border-radius: var(--border-radius);
+
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
 }
 
 .profile-group {

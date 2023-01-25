@@ -51,9 +51,9 @@ p {
     opacity: 0.6;
 }
 
-/* img {
-    border: 1px solid saddlebrown;
-} */
+img {
+    width: 2.5rem;
+}
 
 /* DASHBOARD LAYOUT */
 
@@ -133,7 +133,7 @@ p {
 
 .header {
     display: grid;
-    grid-template-rows: calc(var(--header-height) / 3) calc(var(--header-height) * 2 / 3);
+    grid-template-rows: calc(var(--header-height) / 2) calc(var(--header-height) / 2);
     
     background-color: var(--header-color);
     grid-column: 2 / 3;
@@ -162,7 +162,7 @@ p {
 }
 
 .search-icon, .notification-icon {
-    height: 1.6rem;
+    width: 1.6rem;
     opacity: 0.8;
 }
 
@@ -178,7 +178,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 1.8rem;
     
     width: calc(100% - var(--header-split));
 }
@@ -196,18 +196,23 @@ p {
 .greeting-container {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 1.2rem;
 
     width: var(--header-split);
 }
 
+.greeting-container img {
+    width: 4.2rem;
+}
+
 .action-menu {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     gap: 3rem;
 
     width: calc(100% - var(--header-split));
+    padding: 2rem;
 }
 
 .action-menu button {

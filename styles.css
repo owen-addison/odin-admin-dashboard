@@ -260,6 +260,14 @@ p {
     padding: 2em 1em;
 }
 
+.card-icons {
+    display: grid;
+    grid-template-columns: repeat(3, 60px);
+    justify-self: end;
+
+    border: 1px solid black;
+}
+
 .content-announce {
     grid-column: 2 / 3;
     grid-row: 1 / 2;

@@ -6,6 +6,8 @@
 
     --sidebar-color: lightskyblue;
     --header-color: white;
+    --card-color: white;
+    --highlight-color: goldenrod;
     --bg-test-color-1: lightpink;
     --bg-test-color-2: lightgoldenrodyellow;
 
@@ -26,6 +28,16 @@ h2 {
     font-size: 1.4rem;
     margin: 0;
     /* background-color: var(--bg-test-color-1); */
+}
+
+h3 {
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+h4 {
+    font-size: 1.1rem;
+    margin: 0;
 }
 
 /* DASHBOARD LAYOUT */
@@ -191,7 +203,71 @@ h2 {
 /* MAIN CONTENT SECTION */
 
 .main-content {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 10px;
+
     background-color: lightsteelblue;
     opacity: 0.5;
     grid-area: 2 / 2 / 3 / 3;
+
+    padding: 2rem 1rem;
+
+    --border-radius: 8px;
+}
+
+.content-projects {
+    display: grid;
+    grid-template-rows: 2rem 1fr;
+
+    border: 1px solid salmon;
+}
+
+.title-container {
+    grid-row: 1 / 2;
+    height: 100%;
+    border: 1px solid pink;
+}
+
+.content-title {
+
+    color: black;
+}
+
+.cards-container {
+    border: 1px solid purple;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.project-card {
+    border: 1px solid blue;
+
+    display: grid;
+    grid-template-columns: 5px 1fr;
+    border-radius: var(--border-radius);
+
+    background-color: var(--card-color);
+}
+
+.card-strip {
+    grid-column: 1 / 2;
+    background-color: var(--highlight-color);
+
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
+}
+
+.card-content {
+    border: 1px solid red;
+
+    display: grid;
+    grid-template-rows: 1em 1fr 1em;
+
+    padding: 2em 1em;
+}
+
+.content-announce {
+    border: 1px solid green;
 }

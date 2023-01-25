@@ -2,12 +2,14 @@
 
 :root {
     font-family: 'Roboto', Arial, Helvetica, sans-serif, sans-serif;
-    font-size: 12px;
+    font-size: 14px;
 
     --sidebar-color: lightskyblue;
     --header-color: white;
     --card-color: white;
     --highlight-color: goldenrod;
+
+    
     --bg-test-color-1: lightpink;
     --bg-test-color-2: lightgoldenrodyellow;
 
@@ -25,18 +27,27 @@ h1 {
 
 h2 {
     color: white;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     margin: 0;
-    /* background-color: var(--bg-test-color-1); */
 }
 
 h3 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin: 0;
 }
 
 h4 {
     font-size: 1.1rem;
+    margin: 0;
+}
+
+h5 {
+    font-size: 1rem;
+    margin: 0;
+}
+
+p {
+    font-size: 0.9rem;
     margin: 0;
 }
 
@@ -205,20 +216,26 @@ h4 {
 .main-content {
     display: grid;
     grid-template-columns: 1fr 300px;
-    gap: 10px;
+    grid-template-rows: 320px minmax(250px, 1fr);
+    gap: 15px;
 
-    background-color: lightsteelblue;
-    opacity: 0.5;
+    background-color: rgba(176, 196, 222, 0.499);
     grid-area: 2 / 2 / 3 / 3;
 
-    padding: 2rem 1rem;
+    padding: 2rem 2rem 2rem 1.5rem;
+    /* margin-right: 1rem; */
 
     --border-radius: 8px;
+
+    border: 1px solid yellow;
 }
 
 .content-projects {
     display: grid;
     grid-template-rows: 2rem 1fr;
+
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
 
     border: 1px solid salmon;
 }
@@ -270,4 +287,14 @@ h4 {
 
 .content-announce {
     border: 1px solid green;
+
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.content-trending {
+    border: 1px solid pink;
+
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
 }
